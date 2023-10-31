@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <div class="card-header">
+                Registro Cuenta Bostero
+            </div>
+            <div class="card-body">
+                <form action="/users/signup" method="POST">
+                    <div class="form-group">
+                        <input type="text" placeholder="tu nombre bostero" name="name" class="form-control" value="{{name}}">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="tu mail bostero" name="email" class="form-control" value="{{email}}">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="tu password bostero" name="password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="confirma password bostero" name="confirm_password"
+                            class="form-control">
+                    </div>
+                    <button class="btn btn-primary btn-block"> ENTRA BOSTERO</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

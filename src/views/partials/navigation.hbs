@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Notes app</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+      <div class="navbar-nav">
+        {{#if user}}<li class="nav-item dropdown"></li>
+        <a class="nav-link active" aria-current="page" href="/notes">Notas</a>
+        <li><a class="nav-link active" aria-current="page" href="/users/logout">Logout</a></li>
+        <li><a class="nav-link active" aria-current="page" href="/notes/add">Agregar Nota</a></li>
+
+        <a class="nav-link" href="/about">About</a>
+        {{else}}
+        <a class="nav-link" href="/users/signin">Login</a>
+        <a class="nav-link" href="/users/signup">Register</a>
+        <a class="nav-link active" aria-current="page" href="/about">About</a>
+
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Mas
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li>
+
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+        </li>
+
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</nav>
