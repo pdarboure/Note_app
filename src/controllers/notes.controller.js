@@ -6,6 +6,7 @@ notesCtrl.renderNoteForm = (req, res) => {
 }
 
 
+
 notesCtrl.createNewNote = async (req, res) => {
     const { title, description } = req.body
     const newNote = new Note({ title, description })

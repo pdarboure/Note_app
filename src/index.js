@@ -4,6 +4,7 @@ const app = require("./server")
 
 require("./database")
 
+
 console.log(process.env.TESTING);
 
 app.listen(app.set("port"),()=>{

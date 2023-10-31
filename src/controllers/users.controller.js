@@ -5,6 +5,7 @@ const passport = require("passport")
 userCtrl.renderSignUpForm = (req, res) => {
     res.render("users/signup")
 }
+
 userCtrl.signup = async(req, res) => {
     const errors = []
     console.log(req.body);

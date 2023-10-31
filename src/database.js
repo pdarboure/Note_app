@@ -8,5 +8,6 @@ mongoose.connect(mongodv_uri, {
     useNewUrlParser: true
 }) 
 
+
 .then(db=>console.log(`database esta conectada loco`))
 .catch(err=>console.log(err))
